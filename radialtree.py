@@ -321,13 +321,6 @@ def radialTreee(
                 colorlines = []
                 for c in colorlabels_legend[labelname]["colors"]:
                     colorlines.append(Line2D([0], [0], color=c, lw=4))
-                leg = ax.legend(
-                    colorlines,
-                    colorlabels_legend[labelname]["labels"],
-                    bbox_to_anchor=(1.5 + 0.3 * i, 1.0),
-                    title=labelname,
-                )
-                ax.add_artist(leg)
             # break
     ax.spines.right.set_visible(False)
     ax.spines.top.set_visible(False)
