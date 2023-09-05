@@ -90,14 +90,12 @@ def radialTreee(
         offset = (
             width * len(colorlabels) / R + space * (len(colorlabels) - 1) / R + 0.05
         )
-        print(offset)
     elif sample_classes != None:
         offset = (
             width * len(sample_classes) / R
             + space * (len(sample_classes) - 1) / R
             + 0.05
         )
-        print(offset)
     else:
 
         offset = 0
@@ -210,7 +208,7 @@ def radialTreee(
         j = 0
         outerrad = R * 1.05 + width * len(colorlabels) + space * (len(colorlabels) - 1)
 
-        print(outerrad)
+    
         # sort_index=np.argsort(Z2['icoord'])
         # print(sort_index)
         intervals = []
@@ -248,7 +246,7 @@ def radialTreee(
 
         if colorlabels_legend != None:
             for i, labelname in enumerate(labelnames):
-                print(colorlabels_legend[labelname]["colors"])
+                
                 colorlines = []
                 for c in colorlabels_legend[labelname]["colors"]:
                     colorlines.append(Line2D([0], [0], color=c, lw=4))
@@ -274,7 +272,6 @@ def radialTreee(
             R * 1.05 + width * len(sample_classes) + space * (len(sample_classes) - 1)
         )
 
-        print(outerrad)
         # sort_index=np.argsort(Z2['icoord'])
         # print(sort_index)
         intervals = []
@@ -320,7 +317,7 @@ def radialTreee(
 
         if colorlabels_legend != None:
             for i, labelname in enumerate(labelnames):
-                print(colorlabels_legend[labelname]["colors"])
+                
                 colorlines = []
                 for c in colorlabels_legend[labelname]["colors"]:
                     colorlines.append(Line2D([0], [0], color=c, lw=4))
